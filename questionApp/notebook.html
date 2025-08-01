@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Caderno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="notebook.html">Novo Caderno</a>
+    <a href="question.html">Questão</a>
+  </nav>
+  <button id="theme-switch" class="theme-switch">Trocar tema</button>
+</header>
+<main>
+  <div style="display:flex; gap:40px;">
+    <div class="tree">
+      <ul id="tree"></ul>
+    </div>
+    <div>
+      <h4>Filtros ativos</h4>
+      <div id="active-filters"></div>
+      <div style="margin-top:20px;">
+        <label>Nome do caderno<br>
+          <input type="text" id="notebook-name">
+        </label>
+        <br><br>
+        <button onclick="alert('Caderno gerado!')">GERAR CADERNO</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
